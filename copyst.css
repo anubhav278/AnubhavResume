@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f4f4f9; /* Light gray background */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.mainbody {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('IMG_9398.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff; /* White text */
+    padding: 20px;
+    box-shadow: 0 -8px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.name, .post {
+    text-align: center;
+}
+
+.name h1 {
+    color: #ffffff; /* Teal color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Slightly darker shadow */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.post h2 {
+    color: #ffffff; /* Bright pink color */ 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Slightly darker shadow */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.profile {
+    width: 150px; /* Set the size of the profile picture */
+    height: 150px; /* Set the size of the profile picture */
+    border-radius: 50%; /* Make the image round */
+    border: 5px solid #ffffff; /* White border */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    object-fit: cover; /* Ensure the image covers the entire circle without distortion */
+    margin-bottom: 20px; /* Add some space below the profile picture */
+}
+
+.profile:hover {
+    transform: scale(1.1);
+}
+
+.contact, .education, .skills, .projects, .para {
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark gray text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact:hover, .education:hover, .skills:hover, .projects:hover, .para:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); /* Slightly darker shadow */
+}
+
+.contact h1, .education h1, .skills h1, .projects h1, .para h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+    color: #060606; /* Soft coral color */
+}
+
+.contact p, .education p, .skills p, .projects p, .para p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #040303; /* Medium gray text */
+}
+
+.contact a, .education a, .skills a, .projects a {
+    color: #007bff; /* Bright blue color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover, .education a:hover, .skills a:hover, .projects a:hover {
+    color: #1c1b1b; /* Soft coral color */
+    text-decoration: underline;
+}
+
+.contact i, .education i, .skills i, .projects i {
+    margin-right: 10px;
+    color: #000000; /* Icon color matching h1 color */
+}
+
+.para {
+    width: 80%;
+    background-color: #fafafa; /* Very light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    margin-top: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.para h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333333; /* Dark gray */
+}
+
+.para p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666666; /* Medium gray */
+}
+
+.project {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.project h2 {
+    font-size: 22px;
+    color: #00bfa5; /* Teal color */
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.project p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555555; /* Medium gray */
+}
+
+.project a {
+    color: #007bff; /* Bright pink color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: #00bfa5; /* Teal color on hover */
+    text-decoration: underline;
+}
+
+.project:hover h2 {
+    color: #333333; /* Dark gray on hover */
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+    .contact, .education, .skills, .projects, .para {
+        width: 90%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainbody {
+        padding: 10px;
+    }
+}
